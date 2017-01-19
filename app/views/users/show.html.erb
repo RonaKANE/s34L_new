@@ -35,15 +35,16 @@
 </p>
  
 <p>
-  <strong>certificate_name:</strong>
+  <strong>Certificate Name:</strong>
   <%= @user.certificate_name %>
 </p>
 
 <p>
-  <strong>password:</strong>
+  <strong>Password:</strong>
   <%= @user.password %>
 </p>
 
 <p><%= link_to 'Edit user', edit_user_path(@user) %></p>
+<p><%= link_to 'Show all users', users_path %></p>
 <%= link_to 'Back to home page', root_path %>
  
