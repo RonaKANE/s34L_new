@@ -1,0 +1,52 @@
+<p>
+  <strong>Hostname:</strong>
+  <%= host.hostname %>
+</p>
+
+<p>
+  <strong>Serial Number:</strong>
+  <%= host.serial_number %>
+</p>
+
+<p>
+  <strong>Orange Reference :</strong>
+  <%= host.reference_orange %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= host.location %>
+</p>
+
+<p>
+  <strong>Project Name:</strong>
+  <%= host.project_name %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= host.brand %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= host.model %>
+</p>
+
+<p>
+  <strong>Electricity Consumption:</strong>
+  <%= host.electricity_consumption %>
+</p>
+
+
+
+<p>
+  <strong>State of the machine :</strong>
+  <%= host.state ? "the computer is used" : "The computer is not used"%>
+</p>
+
+<p>
+  <%= link_to 'Destroy host', [host.user, host],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>

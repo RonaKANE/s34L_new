@@ -1,0 +1,56 @@
+<%= form_for([@user, @user.hosts.build]) do |f| %>
+  <p>
+    <%= f.label :hostname %><br>
+    <%= f.text_field :hostname %>
+  </p>
+
+  <p>
+    <%= f.label :serial_number %><br>
+    <%= f.text_area :serial_number %>
+  </p>
+
+  <p>
+    <%= f.label :reference_orange %><br>
+    <%= f.text_field :reference_orange %>
+  </p>
+
+  <p>
+    <%= f.label :location %><br>
+    <%= f.text_area :location %>
+  </p>
+
+    <p>
+    <%= f.label :project_name %><br>
+    <%= f.text_field :project_name %>
+  </p>
+
+  <p>
+    <%= f.label :brand %><br>
+    <%= f.text_area :brand %>
+  </p>
+
+    <p>
+    <%= f.label :model %><br>
+    <%= f.text_field :model %>
+  </p>
+
+  <p>
+    <%= f.label :certificate %><br>
+    <%= f.text_area :certificate %>
+  </p>
+
+    <p>
+    <%= f.label :electricity_consumption %><br>
+    <%= f.text_field :electricity_consumption %>
+  </p>
+
+  <p>
+  This Host is in use
+  <%= f.check_box :state %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>
