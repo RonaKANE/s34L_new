@@ -1,0 +1,49 @@
+<h1> Printing User's Information</h1>
+<p>
+  <strong>User Id:</strong>
+  <%= @user.user_id %>
+</p>
+ 
+<p>
+  <strong>First Name:</strong>
+  <%= @user.first_name %>
+</p>
+
+<p>
+  <strong>Last Name:</strong>
+  <%= @user.last_name %>
+</p>
+ 
+<p>
+  <strong>Service:</strong>
+  <%= @user.service %>
+</p>
+
+<p>
+  <strong>Tel:</strong>
+  <%= @user.user_tel %>
+</p>
+ 
+<p>
+  <strong>Mail:</strong>
+  <%= @user.user_mail %>
+</p>
+
+<p>
+  <strong>Office:</strong>
+  <%= @user.office %>
+</p>
+ 
+<p>
+  <strong>certificate_name:</strong>
+  <%= @user.certificate_name %>
+</p>
+
+<p>
+  <strong>password:</strong>
+  <%= @user.password %>
+</p>
+
+<p><%= link_to 'Edit user', edit_user_path(@user) %></p>
+<%= link_to 'Back to home page', root_path %>
+ 
