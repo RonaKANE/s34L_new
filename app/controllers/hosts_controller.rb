@@ -1,4 +1,10 @@
 class HostsController < ApplicationController
+
+	def index
+	@hosts = Host.all
+	render @hosts
+	end
+
 	def create
     @user = User.find(params[:user_id])
     @host = @user.hosts.create(host_params)
