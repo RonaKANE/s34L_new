@@ -8,10 +8,11 @@ class HostsController < ApplicationController
 	def create
     @user = User.find(params[:user_id])
     @host = @user.hosts.create(host_params)
-    @host.inspect
+    #@host.inspect
     redirect_to user_path(@user)
 
   end
+  
   def destroy
     @user = User.find(params[:user_id])
     @host = @user.hosts.find(params[:id])
