@@ -44,12 +44,17 @@
   <%= @user.password %>
 </p>
 
-<h2> Show User's Hosts</h2>
+<h1> Show User's Hosts</h1>
 <%= render @user.hosts %>
 
 <h1>Add a Host for this user:</h1>
 <p> <%= render 'hosts/form' %> </p>
+<!-- show the following two lines only if user isAdmin to do-->
 <p><%= link_to 'Edit user', edit_user_path(@user) %></p>
 <p><%= link_to 'Show all users', users_path %></p>
+<!-- if user isAdmin or not show -->
 <p><%= link_to 'Back to home page', root_path %></p>
+
+<!-- if user isAdmin -->
+
  

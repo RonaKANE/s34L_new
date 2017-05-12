@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170118165453) do
+ActiveRecord::Schema.define(version: 20170511115218) do
 
   create_table "hosts", force: :cascade do |t|
     t.string   "hostname"
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 20170118165453) do
     t.text     "password"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.string   "password_digest"
   end
 
 end

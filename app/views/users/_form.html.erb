@@ -41,7 +41,7 @@
  
   <p>
     <%= f.label :user_mail %><br>
-    <%= f.text_area :user_mail %>
+    <%= f.email_field :user_mail %>
   </p>
 
    <p>
@@ -56,9 +56,14 @@
 
   <p>
     <%= f.label :password %><br>
-    <%= f.text_area :password %>
+    <%= f.password_field :password %>
   </p>
- 
+
+  <p>
+  <%= f.label :password_confirmation, "Confirmation" %><br>
+  <%= f.password_field :password_confirmation %>
+  </p>
+
   <p>
     <%= f.submit %>
   </p>
